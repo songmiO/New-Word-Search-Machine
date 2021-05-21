@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_______________" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojl-km-Her">
+                                <rect key="frame" x="50" y="304" width="244" height="50"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rwg-Kg-4Xh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchImageView" translatesAutoresizingMaskIntoConstraints="NO" id="BKd-nk-QyY">
+                                <rect key="frame" x="50" y="64" width="314" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="mGG-wo-GoV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4M-5v-jbw">
+                                <rect key="frame" x="50" y="414" width="314" height="388"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBw-Iy-TZg">
+                                <rect key="frame" x="314" y="304" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="SearchButton"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LBw-Iy-TZg" secondAttribute="trailing" constant="50" id="8Mp-3Z-fA3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ojl-km-Her" secondAttribute="trailing" constant="120" id="AW5-YD-7zF"/>
+                            <constraint firstItem="ojl-km-Her" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="GcX-4N-q82"/>
+                            <constraint firstItem="BKd-nk-QyY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="OFe-Kg-1Oa"/>
+                            <constraint firstItem="q4M-5v-jbw" firstAttribute="top" secondItem="LBw-Iy-TZg" secondAttribute="bottom" constant="60" id="XkH-Wv-V2b"/>
+                            <constraint firstItem="ojl-km-Her" firstAttribute="top" secondItem="BKd-nk-QyY" secondAttribute="bottom" constant="40" id="dWA-Da-VqS"/>
+                            <constraint firstItem="q4M-5v-jbw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="dav-RF-XuZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q4M-5v-jbw" secondAttribute="trailing" constant="50" id="hns-WD-lZ3"/>
+                            <constraint firstItem="q4M-5v-jbw" firstAttribute="top" secondItem="ojl-km-Her" secondAttribute="bottom" constant="60" id="iyc-Ne-u3n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q4M-5v-jbw" secondAttribute="bottom" constant="60" id="jfI-fB-JAe"/>
+                            <constraint firstItem="LBw-Iy-TZg" firstAttribute="top" secondItem="BKd-nk-QyY" secondAttribute="bottom" constant="40" id="uFS-Id-cfB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BKd-nk-QyY" secondAttribute="trailing" constant="50" id="umo-4s-Hq3"/>
+                            <constraint firstItem="LBw-Iy-TZg" firstAttribute="leading" secondItem="ojl-km-Her" secondAttribute="trailing" constant="20" id="ywk-Od-WUd"/>
+                            <constraint firstItem="BKd-nk-QyY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zcM-Mc-47P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SearchButton" width="44" height="44"/>
+        <image name="SearchImageView" width="222" height="191"/>
+    </resources>
+</document>
